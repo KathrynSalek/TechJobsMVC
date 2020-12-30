@@ -5,15 +5,30 @@
 
 <table class="centeredTable">
     <tr>
-        @foreach(var column in ViewBag.columns)
+        @foreach (var column in ViewBag.columns)
         {
             <th>@column.Value</th>
         }
     </tr>
     <tr>
-        @{
-            //TODO #2: Complete the View Jobs By Category Table
+        @*@if (ViewBag.columns.Equals("All"))                                   MY CODE
+        {
+        //TODO #2: Complete the View Jobs By Category Table
+
+
+        {
+        <td>
+            <ul>
+
+                {
+                <li>
+                    <a asp-controller="List" asp-action="Jobs">View All></a>
+                </li>
+                }
+            </ul>
+        </td>
         }
+        } *@
 
         <td></td> @* Feel free to remove or modify this element if necessary. *@
         @foreach (var category in ViewBag.tableChoices)
@@ -30,4 +45,4 @@
             </td>
         }
     </tr>
-        </table>
+</table>

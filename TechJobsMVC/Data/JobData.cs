@@ -241,6 +241,13 @@ namespace TechJobsMVC.Data
             return rowValues.ToArray();
         }
 
+        /*static public List<JobField> GetAllJobs()                     MY CODE
+        {
+            LoadData();
+            AllJobs.Sort(new NameSorter());
+            return AllJobs;
+        }*/
+
         static public List<JobField> GetAllEmployers()
         {
             LoadData();

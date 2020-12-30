@@ -22,6 +22,7 @@ namespace TechJobsMVC.Controllers
         };
         internal static Dictionary<string, List<JobField>> TableChoices = new Dictionary<string, List<JobField>>()
         {
+            //{"view all", JobData.GetAllJobs()},                       MY CODE
             {"employer", JobData.GetAllEmployers()},
             {"location", JobData.GetAllLocations()},
             {"positionType", JobData.GetAllPositionTypes()},
@@ -32,6 +33,7 @@ namespace TechJobsMVC.Controllers
         {
             ViewBag.columns = ColumnChoices;
             ViewBag.tableChoices = TableChoices;
+            //ViewBag.viewAll = JobData.GetAllJobs();                   MY CODE
             ViewBag.employers = JobData.GetAllEmployers();
             ViewBag.locations = JobData.GetAllLocations();
             ViewBag.positionTypes = JobData.GetAllPositionTypes();
