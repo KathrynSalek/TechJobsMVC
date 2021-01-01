@@ -34,7 +34,7 @@ namespace TechJobsMVC.Controllers
             }
 
             ViewBag.columns = ListController.ColumnChoices;
-            //ViewBag.title = "Jobs with " + ListController.ColumnChoices[searchType] + ": " + searchTerm;
+            ViewBag.title = "Jobs with " + ListController.ColumnChoices[searchType] + ": " + searchTerm;
             ViewBag.jobs = jobs;
 
             return View("Index");
