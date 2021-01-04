@@ -24,7 +24,8 @@ namespace TechJobsMVC.Controllers
         {
             List<Job> jobs;
 
-            if (searchType.ToLower() == "all" || searchTerm.ToLower() == "all" || searchTerm == "" || searchTerm is null)
+            //if (searchType.ToLower() == "all" || searchTerm.ToLower() == "all" || searchTerm == "" || searchTerm is null)
+            if (string.IsNullOrEmpty(searchTerm))
             {
                 jobs = JobData.FindAll();
             }
